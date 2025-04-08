@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+.background{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(
+        to top,
+        rgba(48, 48, 42, 0.5),
+        rgba(20, 20, 28, 0.785)
+      ), url("./background.jpg");
+    background-size: cover;
+    text-align: center;
+}
+h1{
+    color: wheat;
+    padding: 8vh;
+}
+input{
+    color: white;
+    font-weight: 500;
+    height: 8vh;
+    width: 25vw;
+    border-radius: 20px;
+    border: none;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 0.403);
+    color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+input:hover{
+    background-color: rgba(255, 255, 255, 0.575);
+}
+.input-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 2rem;
+    background-color: rgba(255, 255, 255, 0.403);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.task{
+    
+}
+.task-ele{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    
+}
+.task-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    height: 8vh;
+    width: 25vw;
+    background-color:rgba(245, 222, 179, 0.289) ;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+.task-p:hover{
+    background-color: rgba(255, 255, 255, 0.575);
+}

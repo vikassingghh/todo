@@ -1,0 +1,30 @@
+let task = document.getElementById("input-tast");
+let add = document.getElementById("add-btn");
+let task_cont = document.getElementById("task-c");
+let i =1;
+
+add.addEventListener("click",function(){
+    let task_v = task.value;
+    if(task_v==="") return;
+
+    localStorage.setItem(i,task_v);
+    let answer = localStorage.getItem(i)
+    task.value = "";
+    
+    let box = document.createElement("div");
+    box.innerHTML = `<div class="task-ele">
+    <div class="task-p">
+        <p>${answer}</p>
+    </div>
+    <div id="delbutton" class="add">
+        <i class="fa-solid fa-delete-left"></i>
+    </div> 
+</div>`
+    i++;
+    
+    let delbtn = box.querySelector("#delbutton");
+    delbtn.addEventListener("click" , function(){
+        box.innerHTML="";
+    })
+    task_cont.appendChild(box);
+})
